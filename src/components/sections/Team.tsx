@@ -5,7 +5,7 @@ import imageSrc from "../../../public/images/team-hands.png";
 export default function Team() {
   return (
     <>
-      <div className="max-w-6xl mx-auto -mt-50 px-6 relative z-10">
+      <div className="max-w-6xl mx-auto -mt-20 sm:-mt-50 px-6 relative z-10">
         <img
           src={imageSrc}
           alt="Team hands together"
