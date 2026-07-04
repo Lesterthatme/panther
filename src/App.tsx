@@ -1,9 +1,8 @@
 import "./App.css";
 import Header from "./components/layout/Header";
 import Mission from "./components/sections/Mission";
-
-// import PeopleBehind from "./components/sections/PeopleBehind";
-// import Team from "./components/sections/Team";
+import PeopleBehind from "./components/sections/PeopleBehind";
+import Team from "./components/sections/Team";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -23,7 +22,7 @@ simplify payments and optimize reimbursement. With yearround service, we ensure 
 coverage and your facility remains financially protected."
        
       />
-      {/* <PeopleBehind
+      <PeopleBehind
         eyebrow="meet our team"
         heading="The People Behind Panther"
         body="At Panther, our team is dedicated to helping healthcare facilities, residents, and families
@@ -32,7 +31,7 @@ and a commitment to exceptional service to ensure every resident receives the co
 they need while helping facilities improve efficiency and financial performance."
         
       />
-      <Team /> */}
+      <Team />
       <Footer
         aboutText="Simplifying Medicare enrollment and coverage
 management while supporting residents, families,

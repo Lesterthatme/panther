@@ -34,8 +34,8 @@ export default function Footer({
                           md:text-5xl md:text-right md:justify-end">
               {heading}
             </h3>
-            <p className="text-white  text-md mb-3.5 text-center 
-                          md:text-right ">
+            <p className="text-white text-md mb-3.5 text-center w-full
+                          md:text-right">
               {body}
             </p>
           </div>

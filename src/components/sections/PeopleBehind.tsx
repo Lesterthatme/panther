@@ -10,15 +10,16 @@ export default function PeopleBehind({
   body,
 }: PeopleBehindProps) {
   return (
-    <section className="bg-[#0a2e2e] h-100 hidden">
-      <div className="xl:px-[370px]">
-        <p className="text-xs tracking-widest uppercase text-white/60 mb-2">
+    <section className="bg-[#0a2e2e] h-[679px] px-6">
+      <div className="pt-16 pb-45 md:pt-28 md:pb-87.5 max-w-285 mx-auto">
+        <p className="text-xs tracking-widest font-semibold font-serif uppercase text-white/60 mb-8">
           {eyebrow}
         </p>
-        <h2 className="text-2xl font-serif text-white mb-4 leading-snug">
+        <h2 className="text-[36px] font-bold font-serif text-white mb-5 leading-none max-w-125
+                      md:text-[60px] ">
           {heading}
         </h2>
-        <p className="text-sm text-white/70 leading-relaxed mb-6">{body}</p>
+        <p className="text-[18px] font-normal text-white mb-6 max-w-[768px]">{body}</p>
       </div>
     </section>
   );
