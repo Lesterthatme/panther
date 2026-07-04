@@ -11,7 +11,7 @@ function App() {
     <>
       <Header tagline="Simplifying Medicare, Maximizing Coverage." />
       <Mission
-        eyebrow="Our Purpose"
+        eyebrow="Our Mission"
         heading="Our Mission"
         body="We guide nursing home residents through Medicare options
 and enroll them in the plans best suited to their needs. This
@@ -23,7 +23,7 @@ coverage and your facility remains financially protected."
         imageSrc={images}
       />
       <PeopleBehind
-        eyebrow="Who We Are"
+        eyebrow="meet our team"
         heading="The People Behind Panther"
         body="At Panther, our team is dedicated to helping healthcare facilities, residents, and families
 navigate Medicare with confidence. We combine industry expertise, personalized support,

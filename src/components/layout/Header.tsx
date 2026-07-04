@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/image.png";
 
 interface HeaderProps {
   tagline: string;
@@ -6,11 +6,15 @@ interface HeaderProps {
 
 export default function Header({ tagline }: HeaderProps) {
   return (
-    <header className="bg-gradient-to-r from-[#215E61] to-[#0a2e2e] px-6 py-4 flex items-center justify-around">
-      <div className="text-white">
-        <img src={logo} alt="company_logo" className="h-[16rem] " />
+    <header className="flex items-center bg-[#0a2e2e] h-[387px] w-full">
+      <div className="flex items-center justify-between w-full xl:px-[370px]">
+        <div className="text-white">
+          <img src={logo} alt="company_logo" className="h-50" />
+        </div>
+        <p className="text-white text-2xl tracking-widest uppercase">
+          {tagline}
+        </p>
       </div>
-      <p className="text-white text-2xl tracking-widest uppercase">{tagline}</p>
     </header>
   );
 }
