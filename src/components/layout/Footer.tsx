@@ -27,7 +27,7 @@ export default function Footer({
               alt="Company Logo"
               className="object-contain h-65 w-auto mb-6"
             />
-            <p className="text-white text-center text-md ">{aboutText}</p>
+            <p className="text-white text-center text-[16px] xl:px-30 ">{aboutText}</p>
           </div>
           <div className="flex flex-col justify-center items-center md:mt-17 w-full">
             <h3 className="mb-2 flex flex-row justify-center w-full text-center text-white font-serif font-medium text-3xl 

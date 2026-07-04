@@ -10,7 +10,7 @@ export default function PeopleBehind({
   body,
 }: PeopleBehindProps) {
   return (
-    <section className="bg-[#0a2e2e] h-[679px] px-6">
+    <section className="bg-[#0a2e2e] h-[570px] md:h-160 px-6">
       <div className="pt-16 pb-45 md:pt-28 md:pb-87.5 max-w-285 mx-auto">
         <p className="text-xs tracking-widest font-semibold font-serif uppercase text-white/60 mb-8">
           {eyebrow}
