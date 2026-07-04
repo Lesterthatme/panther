@@ -2,17 +2,15 @@ interface PeopleBehindProps {
   eyebrow: string;
   heading: string;
   body: string;
-  imageSrc: string;
 }
 
 export default function PeopleBehind({
   eyebrow,
   heading,
   body,
-  imageSrc,
 }: PeopleBehindProps) {
   return (
-    <section className="bg-[#0a2e2e] px-6 py-10">
+    <section className="bg-[#0a2e2e] h-100 hidden">
       <div className="xl:px-[370px]">
         <p className="text-xs tracking-widest uppercase text-white/60 mb-2">
           {eyebrow}
@@ -21,12 +19,6 @@ export default function PeopleBehind({
           {heading}
         </h2>
         <p className="text-sm text-white/70 leading-relaxed mb-6">{body}</p>
-
-        <img
-          src={imageSrc}
-          alt="Team hands together"
-          className="w-full h-auto object-cover"
-        />
       </div>
     </section>
   );

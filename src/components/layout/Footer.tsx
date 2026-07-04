@@ -1,5 +1,6 @@
+import logo from "../../assets/logoFooter.png";
+
 interface FooterProps {
-  logoText: string;
   aboutText: string;
   heading: string;
   body: string;
@@ -7,30 +8,41 @@ interface FooterProps {
 }
 
 export default function Footer({
-  logoText,
   aboutText,
   heading,
   body,
   bottomText,
 }: FooterProps) {
   return (
-    <footer className="bg-black px-6 py-8">
-      <div className="flex gap-8">
-        <div className="w-1/2">
-          <p className="text-white text-sm tracking-widest uppercase mb-3">
-            {logoText}
-          </p>
-          <p className="text-white/60 text-xs leading-relaxed">{aboutText}</p>
+    <footer className="bg-white">
+      <div className=" mx-auto h-full lg:px-14">
+        <div
+          className="bg-black flex flex-col rounded-tl-xl rounded-tr-xl px-6 py-16 gap-8 md:flex-row 
+          lg:items-center lg:justify-between lg:pe-25
+        "
+        >
+          <div className="flex flex-col justify-center items-center ">
+            <img
+              src={logo}
+              alt="Company Logo"
+              className="object-contain h-65 w-auto mb-6"
+            />
+            <p className="text-white text-center text-md ">{aboutText}</p>
+          </div>
+          <div className="flex flex-col justify-center items-center md:mt-17 w-full">
+            <h3 className="mb-2 flex flex-row justify-center w-full text-center text-white font-serif font-medium text-3xl 
+                          md:text-5xl md:text-right md:justify-end">
+              {heading}
+            </h3>
+            <p className="text-white  text-md mb-3.5 text-center 
+                          md:text-right ">
+              {body}
+            </p>
+          </div>
         </div>
-
-        <div className="w-1/2">
-          <h3 className="text-white font-serif text-lg mb-2">{heading}</h3>
-          <p className="text-white/60 text-xs leading-relaxed">{body}</p>
+        <div className="bg-neutral-900 text-center py-8">
+          <p className="text-white text-md font-medium">{bottomText}</p>
         </div>
-      </div>
-
-      <div className="border-t border-white/10 mt-6 pt-4 text-center">
-        <p className="text-white/50 text-xs">{bottomText}</p>
       </div>
     </footer>
   );
